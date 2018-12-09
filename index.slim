@@ -33,14 +33,15 @@ hr
 
     .tabbable
       ul.nav.nav-tabs
-        li.active: a[href="#macosx"  data-toggle="tab"] Mac OS X
-        li:        a[href="#ubuntu"  data-toggle="tab"] Ubuntu
-        li:        a[href="#fedora"  data-toggle="tab"] Fedora
-        li:        a[href="#freebsd" data-toggle="tab"] FreeBSD
-        li:        a[href="#openbsd" data-toggle="tab"] OpenBSD
-        li:        a[href="#gentoo"  data-toggle="tab"] Gentoo
-        li:        a[href="#static"  data-toggle="tab"] Static Builds
-        li:        a[href="#source"  data-toggle="tab"] Source
+        li.active: a[href="#macosx"    data-toggle="tab"] Mac OS X
+        li:        a[href="#ubuntu"    data-toggle="tab"] Ubuntu
+        li:        a[href="#fedora"    data-toggle="tab"] Fedora
+        li:        a[href="#opensuse"  data-toggle="tab"] openSUSE/SLE
+        li:        a[href="#freebsd"   data-toggle="tab"] FreeBSD
+        li:        a[href="#openbsd"   data-toggle="tab"] OpenBSD
+        li:        a[href="#gentoo"    data-toggle="tab"] Gentoo
+        li:        a[href="#static"    data-toggle="tab"] Static Builds
+        li:        a[href="#source"    data-toggle="tab"] Source
 
       .tab-content
         #macosx.tab-pane.active
@@ -57,6 +58,9 @@ hr
         #fedora.tab-pane
           pre sudo dnf install tmate
           p The Fedora packages are maintained by <a href="https://admin.fedoraproject.org/pkgdb/packager/asn/">Andreas Schneider</a>.
+        #opensuse.tab-pane
+          pre sudo zypper install tmate
+          p Available on openSUSE Tumbleweed and Leap. On SUSE Linux Enterprise, you need to <a href="https://packagehub.suse.com/#use">activate the Package Hub</a> Extension first.
         #freebsd.tab-pane
           pre pkg install tmate
           p The FreeBSD packages are maintained by <a href="https://github.com/swills">Steve Wills</a>.
